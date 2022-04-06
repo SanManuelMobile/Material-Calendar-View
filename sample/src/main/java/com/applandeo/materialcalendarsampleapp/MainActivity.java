@@ -17,8 +17,6 @@ import com.applandeo.materialcalendarview.builders.DatePickerBuilder;
 import com.applandeo.materialcalendarview.listeners.OnSelectDateListener;
 import com.applandeo.materialcalendarview.utils.DateUtils;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -169,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements OnSelectDateListe
     }
 
     @Override
-    public void onSelect(@NotNull List<Calendar> calendars) {
+    public void onSelect(List<Calendar> calendars) {
         Stream.of(calendars).forEach(calendar -> {
             Toast.makeText(getApplicationContext(),
                     calendar.getTime().toString(),

@@ -1,4 +1,5 @@
 @file:JvmName("CalendarUtils")
+@file:JvmMultifileClass
 
 package com.applandeo.materialcalendarview
 
